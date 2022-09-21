@@ -5,3 +5,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.home-bg {
+  background-image: url('./assets/home/background-home-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .home-bg {
+    background-image: url('./assets/home/background-home-tablet.jpg');
+  }
+}
+
+@media (max-width: 640px) {
+  .home-bg {
+    background-image: url('./assets/home/background-home-mobile.jpg');
+  }
+}
