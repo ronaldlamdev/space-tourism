@@ -1,15 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Logo from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
+import {FaBars} from 'react-icons/fa'
+import {AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
   return (
-    <nav className='p-8 flex justify-center items-center'>
+    <nav className='flex justify-between items-center p-4'>
       <Link to="/">
-        <img className='mr-48' src={Logo} alt="logo"/>
+        <img className='' src={Logo} alt="logo"/>
       </Link>
-      <div className='w-[25%] h-[2PX] bg-slate-600'></div>
-      <ul className='text-white flex w-[30%] py-8'>
+      <div className=''></div>
+      <ul className='hidden'>
         <li>
           <Link to="/"><span>00</span> HOME</Link>
         </li>
@@ -17,12 +19,39 @@ const Navbar = () => {
           <Link to="destination"><span>01</span> DESTINATION</Link>
         </li>
         <li>
-          <Link to="/"><span>02</span> CREW</Link>
+          <Link to="/crew"><span>02</span> CREW</Link>
         </li>
         <li>
-          <Link to="/"><span>03</span> TECHNOLOGY</Link>
+          <Link to="/technology"><span>03</span> TECHNOLOGY</Link>
         </li>
       </ul>
+
+      <FaBars size={25} className="text-white" />
+
+      {/* Mobile Menu */}
+
+      {/* Overlay */}
+      <div className='absolute w-full h-screen top-0 left-0 bg-black/60 hidden'></div>
+
+      <div className='absolute top-0 left-0 right-0 text-white w-full h-screen font-["Barlow_Condensed"] hidden'>
+        <AiOutlineClose className='absolute top-[1.65rem] right-[.85rem]' size={30}/>
+        <ul className='flex flex-col justify-center items-center w-full h-screen'>
+          <li className='py-4 text-2xl'>
+            <Link to="/"><span>00</span> HOME</Link>
+          </li>
+          <li className='py-4 text-2xl'>
+            <Link to="destination"><span>01</span> DESTINATION</Link>
+          </li>
+          <li className='py-4 text-2xl'>
+            <Link to="/crew"><span>02</span> CREW</Link>
+          </li>
+          <li className='py-4 text-2xl'>
+            <Link to="/technology"><span>03</span> TECHNOLOGY</Link>
+          </li>
+        </ul>
+      </div>
+
+
     </nav>
   )
 }
