@@ -7,27 +7,36 @@
 @tailwind utilities;
 
 .home-bg {
-  background-image: url('./assets/home/background-home-desktop.jpg');
+  background-image: url('./assets/home/background-home-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .destination-bg {
-  background-image: url('./assets/destination/background-destination-desktop.jpg');
+  background-image: url('./assets/destination/background-destination-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
+
+/* Tablet size styling */
+@media (min-width: 641px) {
   .home-bg {
     background-image: url('./assets/home/background-home-tablet.jpg');
   }
 
-
+  .destination-bg {
+    background-image: url('./assets/destination/background-destination-tablet.jpg');
+  }
 }
 
-@media (max-width: 640px) {
+/* Desktop size styling */
+@media (min-width: 1024px) {
   .home-bg {
-    background-image: url('./assets/home/background-home-mobile.jpg');
+    background-image: url('./assets/home/background-home-desktop.jpg');
+  }
+
+  .destination-bg {
+    background-image: url('./assets/destination/background-destination-desktop.jpg');
   }
 }
