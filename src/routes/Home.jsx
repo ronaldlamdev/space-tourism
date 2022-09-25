@@ -22,7 +22,7 @@ const Home = () => {
 
         {/* 2nd Grid Column */}
         <div className='flex justify-center'>
-          <div className='bg-white rounded-[50%] w-[250px] h-[250px] flex justify-center items-center'>
+          <div className='bg-[#ffffff] rounded-[50%] w-[250px] h-[250px] flex justify-center items-center'>
             <Link to="/destination">
               <h2 className='font-["Bellefair"] text-3xl'>EXPLORE</h2>
             </Link>

@@ -22,9 +22,9 @@ const Destination = () => {
       <div className='grid grid-cols-1'>
 
         {/* First grid column */}
-        <div className='text-white flex flex-col items-center'>
-          <h1><span>01</span> PICK YOUR DESTINATION</h1>
-          <img className='w-[250px]' src={image} alt={alt} />
+        <div className='text-white flex flex-col items-center py-8'>
+          <h1 className='text-[1.35rem] font-["Barlow"]'><span className='text-gray-700 mr-2'>01</span>PICK YOUR DESTINATION</h1>
+          <img className='w-[250px] my-8' src={image} alt={alt} />
         </div>
 
         {/* Second grid column */}
