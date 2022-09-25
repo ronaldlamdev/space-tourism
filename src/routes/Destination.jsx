@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
-import MoonImage from '../assets/destination/image-mars.png';
-import MarsImage from '../assets/destination/image-moon.png';
+import MoonImage from '../assets/destination/image-moon.png';
+import MarsImage from '../assets/destination/image-mars.png';
 import EuropaImage from '../assets/destination/image-europa.png';
 import TitanImage from '../assets/destination/image-titan.png';
 import Data from '../data/data.json';
@@ -15,40 +15,47 @@ const Destination = () => {
   const [distance, setDistance] = useState(Data.destinations[0].distance)
   const [travel, setTravel] = useState(Data.destinations[0].travel)
 
+  const handleClick = () => {
+    
+  }
+
   return (
 
-    <div className='destination-bg w-full h-screen'>
+    <div className='destination-bg w-full h-full'>
       <Navbar />
-      <div className='grid grid-cols-1'>
+      <div className='grid grid-cols-1 px-4'>
 
         {/* First grid column */}
-        <div className='text-white flex flex-col items-center py-8'>
-          <h1 className='text-[1.35rem] font-["Barlow"]'><span className='text-gray-700 mr-2'>01</span>PICK YOUR DESTINATION</h1>
+        <div className='text-white flex flex-col items-center pt-8'>
+          <h1 className='text-2xl font-["Barlow"]'><span className='text-white/50 mr-2'>01</span>PICK YOUR DESTINATION</h1>
           <img className='w-[250px] my-8' src={image} alt={alt} />
         </div>
 
         {/* Second grid column */}
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center h-full justify-evenly text-center'>
 
           {/* Destination options */}
-          <ul className='flex text-white w-full justify-evenly'>
-            <li>Moon</li>
+          <ul className='flex text-xl text-white w-full justify-evenly font-["Barlow_Condensed"] my-6'>
+            <li className='underline underline-offset-8'>Moon</li>
             <li>Mars</li>
             <li>Europa</li>
             <li>Titan</li>
           </ul>
 
-          <h1 className='text-white'>{name}</h1>
-          <p className='text-white'>{description}</p>
+          <h1 className='text-white font-["Bellefair"] text-6xl my-4'>{name}</h1>
+          <p className='text-[#d2d8f9] font-["Barlow"] text-[1.1rem] my-6'>{description}</p>
 
-          <div className='text-white'>
-            <div>
-              <h3>AVG DISTANCE</h3>
-              <h2>{distance}</h2>
+          {/* Border */}
+          <div className='w-full h-[2px] bg-gray-500'></div>
+
+          <div className='text-white py-8 flex flex-col justify-evenly h-full gap-4'>
+            <div className=''>
+              <h3 className='text-[#d2d8f9] font-["Barlow"] mb-2'>AVG DISTANCE</h3>
+              <h2 className='font-["Bellefair"] text-4xl'>{distance}</h2>
             </div>
             <div>
-              <h3>EST TRAVEL TIME</h3>
-              <h2>{travel}</h2>
+              <h3 className='text-[#d2d8f9] font-["Barlow"] mb-2'>EST TRAVEL TIME</h3>
+              <h2 className='font-["Bellefair"] text-4xl'>{travel}</h2>
             </div>
           </div>
 
