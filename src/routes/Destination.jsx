@@ -15,8 +15,44 @@ const Destination = () => {
   const [distance, setDistance] = useState(Data.destinations[0].distance)
   const [travel, setTravel] = useState(Data.destinations[0].travel)
 
-  const handleClick = () => {
-    
+  // Info for Moon
+  const MoonInfo = () => {
+    setImage(MoonImage);
+    setAlt(Data.destinations[0].name)
+    setName(Data.destinations[0].name)
+    setDescription(Data.destinations[0].description)
+    setDistance(Data.destinations[0].distance)
+    setTravel(Data.destinations[0].travel)
+  }
+
+  // Info for Mars
+  const MarsInfo = () => {
+    setImage(MarsImage);
+    setAlt(Data.destinations[1].name)
+    setName(Data.destinations[1].name)
+    setDescription(Data.destinations[1].description)
+    setDistance(Data.destinations[1].distance)
+    setTravel(Data.destinations[1].travel)
+  }
+
+  // Info for Europa
+  const EuropaInfo = () => {
+    setImage(EuropaImage);
+    setAlt(Data.destinations[2].name)
+    setName(Data.destinations[2].name)
+    setDescription(Data.destinations[2].description)
+    setDistance(Data.destinations[2].distance)
+    setTravel(Data.destinations[2].travel)
+  }
+
+  // Info for Titan
+  const TitanInfo = () => {
+    setImage(TitanImage);
+    setAlt(Data.destinations[3].name)
+    setName(Data.destinations[3].name)
+    setDescription(Data.destinations[3].description)
+    setDistance(Data.destinations[3].distance)
+    setTravel(Data.destinations[3].travel)
   }
 
   return (
@@ -36,10 +72,10 @@ const Destination = () => {
 
           {/* Destination options */}
           <ul className='flex text-xl text-white w-full justify-evenly font-["Barlow_Condensed"] my-6'>
-            <li className='underline underline-offset-8'>Moon</li>
-            <li>Mars</li>
-            <li>Europa</li>
-            <li>Titan</li>
+            <li onClick={MoonInfo} className='underline underline-offset-8'>Moon</li>
+            <li onClick={MarsInfo}>Mars</li>
+            <li onClick={EuropaInfo}>Europa</li>
+            <li onClick={TitanInfo}>Titan</li>
           </ul>
 
           <h1 className='text-white font-["Bellefair"] text-6xl my-4'>{name}</h1>
