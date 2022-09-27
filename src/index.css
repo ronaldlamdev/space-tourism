@@ -18,6 +18,12 @@
   background-size: cover;
 }
 
+.crew-bg {
+  background-image: url('./assets/crew/background-crew-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /* Tablet size styling */
 @media (min-width: 641px) {
@@ -27,6 +33,10 @@
 
   .destination-bg {
     background-image: url('./assets/destination/background-destination-tablet.jpg');
+  }
+
+  .crew-bg {
+    background-image: url('./assets/crew/background-crew-tablet.jpg');
   }
 }
 
@@ -39,8 +49,8 @@
   .destination-bg {
     background-image: url('./assets/destination/background-destination-desktop.jpg');
   }
-}
 
-p {
-  color: #f5f5f5;
+  .crew-bg {
+    background-image: url('./assets/crew/background-crew-desktop.jpg');
+  }
 }

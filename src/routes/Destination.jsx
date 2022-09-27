@@ -9,7 +9,6 @@ import Data from '../data/data.json';
 const Destination = () => {
 
   const [image, setImage] = useState(MoonImage);
-  const [alt, setAlt] = useState(Data.destinations[0].name)
   const [name, setName] = useState(Data.destinations[0].name)
   const [description, setDescription] = useState(Data.destinations[0].description)
   const [distance, setDistance] = useState(Data.destinations[0].distance)
@@ -18,7 +17,6 @@ const Destination = () => {
   // Info for Moon
   const MoonInfo = () => {
     setImage(MoonImage);
-    setAlt(Data.destinations[0].name)
     setName(Data.destinations[0].name)
     setDescription(Data.destinations[0].description)
     setDistance(Data.destinations[0].distance)
@@ -28,7 +26,6 @@ const Destination = () => {
   // Info for Mars
   const MarsInfo = () => {
     setImage(MarsImage);
-    setAlt(Data.destinations[1].name)
     setName(Data.destinations[1].name)
     setDescription(Data.destinations[1].description)
     setDistance(Data.destinations[1].distance)
@@ -38,7 +35,6 @@ const Destination = () => {
   // Info for Europa
   const EuropaInfo = () => {
     setImage(EuropaImage);
-    setAlt(Data.destinations[2].name)
     setName(Data.destinations[2].name)
     setDescription(Data.destinations[2].description)
     setDistance(Data.destinations[2].distance)
@@ -48,7 +44,6 @@ const Destination = () => {
   // Info for Titan
   const TitanInfo = () => {
     setImage(TitanImage);
-    setAlt(Data.destinations[3].name)
     setName(Data.destinations[3].name)
     setDescription(Data.destinations[3].description)
     setDistance(Data.destinations[3].distance)
@@ -64,7 +59,7 @@ const Destination = () => {
         {/* First grid column */}
         <div className='text-white flex flex-col items-center pt-8'>
           <h1 className='text-2xl font-["Barlow"]'><span className='text-white/50 mr-2'>01</span>PICK YOUR DESTINATION</h1>
-          <img className='w-[250px] my-8' src={image} alt={alt} />
+          <img className='w-[250px] my-8' src={image} alt={name} />
         </div>
 
         {/* Second grid column */}
@@ -72,10 +67,10 @@ const Destination = () => {
 
           {/* Destination options */}
           <ul className='flex text-xl text-white w-full justify-evenly font-["Barlow_Condensed"] my-6'>
-            <li onClick={MoonInfo} className='underline underline-offset-8'>Moon</li>
-            <li onClick={MarsInfo}>Mars</li>
-            <li onClick={EuropaInfo}>Europa</li>
-            <li onClick={TitanInfo}>Titan</li>
+            <li onClick={MoonInfo} className="underline underline-offset-8 cursor-pointer">Moon</li>
+            <li onClick={MarsInfo} className="cursor-pointer">Mars</li>
+            <li onClick={EuropaInfo} className="cursor-pointer">Europa</li>
+            <li onClick={TitanInfo} className="cursor-pointer">Titan</li>
           </ul>
 
           <h1 className='text-white font-["Bellefair"] text-6xl my-4'>{name}</h1>
