@@ -20,26 +20,26 @@ const Crew = () => {
       <div className='flex flex-col-reverse justify-center items-center p-4'>
 
         {/* Text container */}
-        <div className='flex flex-col'>
+        <div className='flex flex-col text-center p-6'>
 
           {/* Options */}
-          <div className='flex justify-evenly'>
-            <div className='w-4 h-4 bg-white rounded-full'></div>
-            <div className='w-4 h-4 bg-white rounded-full'></div>
-            <div className='w-4 h-4 bg-white rounded-full'></div>
-            <div className='w-4 h-4 bg-white rounded-full'></div>
+          <div className='flex justify-evenly mx-auto gap-4'>
+            <div className='w-3 h-3 bg-white rounded-full cursor-pointer'></div>
+            <div className='w-3 h-3 bg-gray-600 rounded-full cursor-pointer'></div>
+            <div className='w-3 h-3 bg-gray-600 rounded-full cursor-pointer'></div>
+            <div className='w-3 h-3 bg-gray-600 rounded-full cursor-pointer'></div>
           </div>
 
-          <div className='text-white'>
-            <h3>{role}</h3>
-            <h2>{name}</h2>
-            <p>{bio}</p>
+          <div className='text-white mt-4'>
+            <h3 className='text-white/50 font-["Bellefair"] text-2xl'>{role}</h3>
+            <h2 className='font-["Bellefair"] text-3xl'>{name}</h2>
+            <p className='text-[#d2d8f9] mt-4 font-["Barlow_Condensed"] text-xl'>{bio}</p>
           </div>
         </div>
 
         {/* Image container */}
-        <div>
-          <img className='w-[250px]' src={image} alt={name}/>
+        <div className='border-b-2 border-gray-600'>
+          <img className='w-[250px] h-[340px]' src={image} alt={name}/>
         </div>
 
       </div>
