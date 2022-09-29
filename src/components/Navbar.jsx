@@ -50,7 +50,7 @@ const Navbar = () => {
             <Link onClick={handleNav} to="/"><span>00</span> HOME</Link>
           </li>
           <li className='py-4 text-3xl'>
-            <Link onClick={handleNav} to="destination"><span>01</span> DESTINATION</Link>
+            <Link onClick={handleNav} to="/destination"><span>01</span> DESTINATION</Link>
           </li>
           <li className='py-4 text-3xl'>
             <Link onClick={handleNav} to="/crew"><span>02</span> CREW</Link>
