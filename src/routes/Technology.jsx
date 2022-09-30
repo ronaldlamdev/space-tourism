@@ -10,9 +10,27 @@ import Data from '../data/data.json';
 
 const Technology = () => {
 
-  const [image, setImage] = useState(PortraitVehicle);
+  const [image, setImage] = useState(LandScapeVehicle);
   const [name, setName] = useState(Data.technology[0].name);
   const [description, setDescription] = useState(Data.technology[0].description);
+
+  const VehicleInfo = () => {
+    setImage(LandScapeVehicle);
+    setName(Data.technology[0].name);
+    setDescription(Data.technology[0].description);
+  }
+
+  const CapsuleInfo = () => {
+    setImage(LandScapeCapsule);
+    setName(Data.technology[1].name);
+    setDescription(Data.technology[1].description);
+  }
+
+  const SpacePortInfo = () => {
+    setImage(LandScapeSpacePort);
+    setName(Data.technology[2].name);
+    setDescription(Data.technology[2].description);
+  }
 
   return (
     <div className='technology-bg w-full h-screen'>
@@ -21,24 +39,24 @@ const Technology = () => {
       <div className='flex flex-col'>
 
         {/* Image Container */}
-        <div>
+        <div className='py-8'>
           <img src={image} alt={name}/>
         </div>
 
         {/* Text Container */}
-        <div>
+        <div className='px-4'>
           
           {/* Options */}
-          <div className='text-white'>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+          <div className='text-white font-["Bellefair"] flex justify-center gap-4 items-center'>
+            <button onClick={VehicleInfo} className='w-12 h-12 text-xl rounded-full border flex items-center justify-center cursor-pointer bg-white border-[#ffffff40] text-black'>1</button>
+            <button onClick={CapsuleInfo} className='w-12 h-12 text-xl rounded-full border flex items-center justify-center cursor-pointer border-[#ffffff40]'>2</button>
+            <button onClick={SpacePortInfo} className='w-12 h-12 text-xl rounded-full border flex items-center justify-center cursor-pointer border-[#ffffff40]'>3</button>
           </div>
 
-          <div className='text-white'>
-            <h2>THE TECHNOLOGY</h2>
-            <h1>{name}</h1>
-            <p>{description}</p>
+          <div className='text-white text-center flex flex-col items-center py-8'>
+            <h2 className='text-[#d2d8f9] font-["Barlow"]'>THE TECHNOLOGY...</h2>
+            <h1 className='font-["Bellefair"] text-4xl'>{name}</h1>
+            <p className='font-["Barlow_Condensed"] text-[#d2d8f9] text-xl py-8'>{description}</p>
           </div>
 
         </div>
