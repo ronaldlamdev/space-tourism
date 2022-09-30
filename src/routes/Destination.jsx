@@ -79,7 +79,7 @@ const Destination = ({data}) => {
       <div className='grid grid-cols-1 px-4'>
 
         {/* First grid column */}
-        <div className='text-white flex flex-col items-center pt-4'>
+        <div className='text-white flex flex-col items-center pt-2'>
           <h1 className='text-2xl font-["Barlow"]'><span className='text-white/50 mr-2'>01</span>PICK YOUR DESTINATION</h1>
           <img className='w-[200px] h-auto py-4' src={image} alt='destination' />
         </div>
@@ -88,27 +88,27 @@ const Destination = ({data}) => {
         <div className='flex flex-col items-center justify-evenly text-center'>
 
           {/* Destination options */}
-          <ul className='flex text-xl text-white w-full justify-evenly font-["Barlow_Condensed"] py-6'>
+          <ul className='flex text-xl text-white w-full justify-evenly font-["Barlow_Condensed"] py-3'>
             <li onClick={handleDestinationInfo} className="cursor-pointer">Moon</li>
             <li onClick={handleDestinationInfo} className="cursor-pointer">Mars</li>
             <li onClick={handleDestinationInfo} className="cursor-pointer">Europa</li>
             <li onClick={handleDestinationInfo} className="cursor-pointer">Titan</li>
           </ul>
 
-          <h1 className='text-white font-["Bellefair"] text-[3rem]'>{destination.name}</h1>
-          <p className='text-[#d2d8f9] font-["Barlow"] text-[1.1rem] py-3'>{destination.description}</p>
+          <h1 className='text-white font-["Bellefair"] text-[2.5rem]'>{destination.name}</h1>
+          <p className='text-[#d2d8f9] font-["Barlow"] pb-6'>{destination.description}</p>
 
           {/* Border */}
           <div className='w-full h-[2px] bg-gray-500'></div>
 
-          <div className='text-white flex flex-col justify-evenly h-full gap-4'>
+          <div className='text-white flex flex-col justify-evenly gap-4 py-4'>
             <div className=''>
               <h3 className='text-[#d2d8f9] font-["Barlow"]'>AVG DISTANCE</h3>
-              <h2 className='font-["Bellefair"] text-4xl py-2'>{destination.distance}</h2>
+              <h2 className='font-["Bellefair"] text-[2rem]'>{destination.distance}</h2>
             </div>
             <div>
               <h3 className='text-[#d2d8f9] font-["Barlow"]'>EST TRAVEL TIME</h3>
-              <h2 className='font-["Bellefair"] text-4xl py-2'>{destination.travel}</h2>
+              <h2 className='font-["Bellefair"] text-[2rem]'>{destination.travel}</h2>
             </div>
           </div>
 
