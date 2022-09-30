@@ -69,3 +69,8 @@
   }
 }
 
+/* Active class for Destination */
+
+.dest-active {
+  @apply underline underline-offset-8
+}
