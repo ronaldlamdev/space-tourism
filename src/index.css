@@ -78,3 +78,13 @@
 .dest-active {
   @apply underline underline-offset-8
 }
+
+/* Active class for Crew */
+
+.crew-option {
+  @apply w-3 h-3 bg-gray-600 rounded-full cursor-pointer hover:bg-white duration-300 ease-out
+}
+
+.crew-active {
+  @apply bg-white
+}
