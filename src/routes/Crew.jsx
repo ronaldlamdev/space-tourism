@@ -19,39 +19,6 @@ const Crew = () => {
     setImage(DouglasImage)
   }
 
-  // const [image, setImage] = useState(DouglasImage);
-  // const [name, setName] = useState(Data.crew[0].name);
-  // const [role, setRole] = useState(Data.crew[0].role);
-  // const [bio, setBio] = useState(Data.crew[0].bio);
-
-  // const DouglasInfo = () => {
-  //   setImage(DouglasImage);
-  //   setName(Data.crew[0].name);
-  //   setRole(Data.crew[0].role);
-  //   setBio(Data.crew[0].bio);
-  // }
-
-  // const MarkInfo = () => {
-  //   setImage(MarkImage);
-  //   setName(Data.crew[1].name);
-  //   setRole(Data.crew[1].role);
-  //   setBio(Data.crew[1].bio);
-  // }
-
-  // const VictorInfo = () => {
-  //   setImage(VictorImage);
-  //   setName(Data.crew[2].name);
-  //   setRole(Data.crew[2].role);
-  //   setBio(Data.crew[2].bio);
-  // }
-
-  // const AnoushehInfo = () => {
-  //   setImage(AnoushehImage);
-  //   setName(Data.crew[3].name);
-  //   setRole(Data.crew[3].role);
-  //   setBio(Data.crew[3].bio);
-  // }
-
   return (
     <div className='crew-bg w-full h-screen'>
       <Navbar />

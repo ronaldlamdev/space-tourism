@@ -88,3 +88,14 @@
 .crew-active {
   @apply bg-white
 }
+
+/* Active class for Technology */
+
+.tech-option {
+  @apply w-12 h-12 text-xl rounded-full border flex items-center justify-center cursor-pointer border-[#ffffff40]
+  hover:bg-white hover:text-black duration-300
+}
+
+.tech-active {
+@apply bg-white text-black
+}
