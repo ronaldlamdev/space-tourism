@@ -4,7 +4,6 @@ import Crew from './routes/Crew'
 import Destination from './routes/Destination'
 import Home from './routes/Home'
 import Technology from './routes/Technology'
-import data from './data/data.json'
 
 const App = () => {
 
@@ -12,9 +11,9 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/destination" element={<Destination data={data.destinations} />} /> 
-        <Route path="/crew" element={<Crew data={data.crew} />} />
-        <Route path="/technology" element={<Technology data={data.technology} />} />
+        <Route path="/destination" element={<Destination />} /> 
+        <Route path="/crew" element={<Crew />} />
+        <Route path="/technology" element={<Technology />} />
       </Routes>
     </BrowserRouter>
   )

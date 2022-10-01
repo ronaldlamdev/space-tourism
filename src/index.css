@@ -71,6 +71,10 @@
 
 /* Active class for Destination */
 
+.dest-option {
+  @apply cursor-pointer hover:underline hover:underline-offset-8
+}
+
 .dest-active {
   @apply underline underline-offset-8
 }
