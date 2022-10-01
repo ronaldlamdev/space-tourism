@@ -32,7 +32,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <FaBars onClick={handleNav} size={25} className={!nav ? 'block text-white cursor-pointer' : 'hidden'} />
+      <FaBars onClick={handleNav} size={25} className={!nav ? 'block text-white cursor-pointer hover:text-[#a9b5f7] duration-300' : 'hidden'} />
 
       {/* Mobile Menu */}
 
@@ -44,18 +44,18 @@ const Navbar = () => {
             : 
             'absolute top-[-100%] left-0 right-0 text-white w-full h-screen font-["Barlow_Condensed"] duration-300'
           }>
-        <AiOutlineClose onClick={handleNav} className='absolute top-[1.65rem] right-[.85rem] cursor-pointer' size={30}/>
+        <AiOutlineClose onClick={handleNav} className='absolute top-[1.65rem] right-[.85rem] cursor-pointer hover:text-[#a9b5f7] duration-300' size={30}/>
         <ul className='flex flex-col justify-center items-center w-full h-screen'>
-          <li className='py-4 text-3xl'>
+          <li className='py-4 text-3xl cursor-pointer hover:text-[#a9b5f7] duration-300'>
             <Link onClick={handleNav} to="/"><span>00</span> HOME</Link>
           </li>
-          <li className='py-4 text-3xl cursor-pointer'>
+          <li className='py-4 text-3xl cursor-pointer hover:text-[#a9b5f7] duration-300'>
             <Link onClick={handleNav} to="/destination"><span>01</span> DESTINATION</Link>
           </li>
-          <li className='py-4 text-3xl cursor-pointer'>
+          <li className='py-4 text-3xl cursor-pointer hover:text-[#a9b5f7] duration-300'>
             <Link onClick={handleNav} to="/crew"><span>02</span> CREW</Link>
           </li>
-          <li className='py-4 text-3xl cursor-pointer'>
+          <li className='py-4 text-3xl cursor-pointer hover:text-[#a9b5f7] duration-300'>
             <Link onClick={handleNav} to="/technology"><span>03</span> TECHNOLOGY</Link>
           </li>
         </ul>

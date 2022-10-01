@@ -32,7 +32,7 @@
 
 
 /* Tablet size styling */
-@media (min-width: 641px) {
+@media (min-width: 767px) {
   .home-bg {
     background-image: url('./assets/home/background-home-tablet.jpg');
   }
