@@ -22,7 +22,7 @@ const Technology = () => {
   return (
     <div className='technology-bg w-full h-screen'>
       <Navbar />
-      <h1 className='text-2xl text-center font-["Barlow"] text-white'><span className='text-white/50 mr-2'>03</span>SPACE LAUNCH 101</h1>
+      <h1 className='text-2xl text-center font-["Barlow"] pt-4 text-white'><span className='text-white/50 mr-2'>03</span>SPACE LAUNCH 101</h1>
       <div className='flex flex-col'>
 
         {/* Image Container */}

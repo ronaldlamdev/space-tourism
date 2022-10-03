@@ -22,7 +22,7 @@ const Crew = () => {
   return (
     <div className='crew-bg w-full h-screen'>
       <Navbar />
-      <h1 className='text-2xl font-["Barlow"] text-white text-center'><span className='text-white/50 mr-2'>02</span>MEET YOUR CREW</h1>
+      <h1 className='text-2xl font-["Barlow"] pt-4 text-white text-center'><span className='text-white/50 mr-2'>02</span>MEET YOUR CREW</h1>
       <div className='flex flex-col-reverse justify-center items-center p-4'>
 
         {/* Text container */}
