@@ -12,7 +12,7 @@ const Home = () => {
         <div className='p-8'>
           <h4 className='font-["Barlow"] text-[#d2d8f9] mb-6 tracking-widest'>SO, YOU WANT TO TRAVEL TO</h4>
           <h1 className='font-["Bellefair"] text-white text-8xl mb-6'>SPACE</h1>
-          <p className='font-["Barlow_Condensed"] text-[#d2d8f9] text-xl'>
+          <p className='font-["Barlow_Condensed"] text-[#d2d8f9] text-xl px-16'>
             Let's face it; if you want to go to space, you might
             as well genuinely go to outer space and not hover kind of on the
             edge of it. Well sit back, and relax because we'll give you 

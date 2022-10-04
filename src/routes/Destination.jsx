@@ -25,7 +25,7 @@ const Destination = () => {
       <div className='grid grid-cols-1 px-4'>
 
         {/* First grid column */}
-        <div className='text-white flex flex-col items-center pt-4'>
+        <div className='text-white flex flex-col items-center md:text-left pt-4'>
           <h1 className='text-2xl font-["Barlow"]'><span className='text-white/50 mr-2'>01</span>PICK YOUR DESTINATION</h1>
           <img className='w-[200px] h-auto py-4' src={image} alt={Data.destinations[destination].name} />
         </div>
