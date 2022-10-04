@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Logo from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {FaBars} from 'react-icons/fa'
 import {AiOutlineClose} from 'react-icons/ai'
 
@@ -11,18 +12,17 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   }
-
   return (
     <nav className='flex justify-between items-center p-4 md:p-0'>
       <Link to="/">
         <img className='cursor-pointer md:p-4' src={Logo} alt="logo"/>
       </Link>
       <div className=''></div>
-      <ul className='hidden md:flex px-12 justify-evenly text-xl items-center font-["Barlow_Condensed"] text-white bg-[#ffffff0a]/5 backdrop-blur-3xl h-[90px]'>
-          <Link className={'mr-8 flex items-center h-full duration-300' + (link === 0 ? ' border-b' : ' hover:border-b-2')} onClick={() => setLink(0)} to="/"><span className='hidden'>00</span> HOME</Link>
-          <Link className={'mr-8 flex items-center h-full duration-300' + (link === 1 ? ' border-b' : ' hover:border-b-2')} onClick={() => setLink(1)} to="/destination"><span className='hidden'>01</span> DESTINATION</Link>
-          <Link className={'mr-8 flex items-center h-full duration-300' + (link === 2 ? ' border-b' : ' hover:border-b-2')} onClick={() => setLink(2)} to="/crew"><span className='hidden'>02</span> CREW</Link>
-          <Link className={'mr-8 flex items-center h-full duration-300' + (link === 3 ? ' border-b' : ' hover:border-b-2')} onClick={() => setLink(3)} to="/technology"><span className='hidden'>03</span> TECHNOLOGY</Link>
+      <ul className='hidden md:flex px-12 justify-evenly text-xl items-center font-["Barlow_Condensed"] text-white bg-[#ffffff0a]/5 backdrop-blur-3xl h-[80px]'>
+          <NavLink className='mr-8 flex items-center h-full hover:border-b-2 duration-300' to="/"><span className='hidden'>00</span> HOME</NavLink>
+          <NavLink className='mr-8 flex items-center h-full hover:border-b-2 duration-300' to="/destination"><span className='hidden'>01</span> DESTINATION</NavLink>
+          <NavLink className='mr-8 flex items-center h-full hover:border-b-2 duration-300' to="/crew"><span className='hidden'>02</span> CREW</NavLink>
+          <NavLink className='mr-8 flex items-center h-full hover:border-b-2 duration-300' to="/technology"><span className='hidden'>03</span> TECHNOLOGY</NavLink>
       </ul>
 
       <FaBars onClick={handleNav} size={25} className={!nav ? 'block text-white cursor-pointer hover:text-[#a9b5f7] duration-300 md:hidden' : 'hidden'} />
