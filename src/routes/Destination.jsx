@@ -34,7 +34,7 @@ const Destination = () => {
         <div className='flex flex-col items-center justify-evenly text-center'>
 
           {/* Destination options */}
-          <ul className='flex text-xl text-white w-full justify-evenly font-["Barlow_Condensed"] py-3'>
+          <ul className='flex text-xl justify-evenly text-white w-full font-["Barlow_Condensed"] py-3 md:justify-center md:gap-20'>
             <li onClick={() => {setDestination(0), imageHandler()}} className={'dest-option' + (destination === 0 ? ' dest-active' : "")}>Moon</li>
             <li onClick={() => {setDestination(1), imageHandler(1)}} className={'dest-option' + (destination === 1 ? ' dest-active' : "")}>Mars</li>
             <li onClick={() => {setDestination(2), imageHandler(2)}} className={'dest-option' + (destination === 2 ? ' dest-active' : "")}>Europa</li>
@@ -42,7 +42,7 @@ const Destination = () => {
           </ul>
 
           <h1 className='text-white font-["Bellefair"] text-[2.3rem]'>{Data.destinations[destination].name}</h1>
-          <p className='text-[#d2d8f9] font-["Barlow"] pb-6'>{Data.destinations[destination].description}</p>
+          <p className='text-[#d2d8f9] font-["Barlow"] pb-6 md:px-28'>{Data.destinations[destination].description}</p>
 
           {/* Border */}
           <div className='w-full h-[2px] bg-gray-500'></div>
