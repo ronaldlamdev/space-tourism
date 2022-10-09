@@ -22,12 +22,12 @@ const Technology = () => {
   return (
     <div className='technology-bg w-full h-screen'>
       <Navbar />
-      <h1 className='text-2xl text-center font-["Barlow"] pt-4 text-white'><span className='text-white/50 mr-2'>03</span>SPACE LAUNCH 101</h1>
+      <h1 className='text-2xl text-center md:text-left font-["Barlow"] pt-8 md:px-8 text-white'><span className='text-white/50 mr-2'>03</span>SPACE LAUNCH 101</h1>
       <div className='flex flex-col'>
 
         {/* Image Container */}
-        <div className='py-8'>
-          <img src={image} alt={Data.technology[tech].name}/>
+        <div className='py-8 w-full'>
+          <img src={image} className="w-full" alt={Data.technology[tech].name}/>
         </div>
 
         {/* Text Container */}
@@ -41,9 +41,9 @@ const Technology = () => {
           </div>
 
           <div className='text-white text-center flex flex-col items-center py-8'>
-            <h2 className='text-[#d2d8f9] font-["Barlow"]'>THE TECHNOLOGY...</h2>
-            <h1 className='font-["Bellefair"] text-4xl'>{Data.technology[tech].name}</h1>
-            <p className='font-["Barlow_Condensed"] text-[#d2d8f9] text-xl py-8'>{Data.technology[tech].description}</p>
+            <h2 className='text-[#d2d8f9] text-2xl font-["Barlow"]'>THE TECHNOLOGY...</h2>
+            <h1 className='font-["Bellefair"] text-5xl'>{Data.technology[tech].name}</h1>
+            <p className='font-["Barlow_Condensed"] text-[#d2d8f9] text-2xl py-8'>{Data.technology[tech].description}</p>
           </div>
 
         </div>
