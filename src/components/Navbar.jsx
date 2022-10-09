@@ -16,12 +16,11 @@ const Navbar = () => {
     setNav(!nav);
   }
   return (
-    <nav className='flex justify-between items-center p-4 md:p-0'>
+    <nav className='flex justify-between items-center p-4 md:p-0 lg:py-4'>
       <Link exact to="/" end>
         <img className='cursor-pointer md:p-4' src={Logo} alt="logo"/>
       </Link>
-      <div></div>
-      <ul className='hidden md:flex px-12 justify-evenly text-xl items-center font-["Barlow_Condensed"] text-white bg-[#ffffff0a]/5 backdrop-blur-3xl h-[80px]'>
+      <ul className='hidden md:flex px-12 justify-evenly text-xl lg:text-3xl items-center font-["Barlow_Condensed"] text-white bg-[#ffffff0a]/5 backdrop-blur-3xl h-[80px]'>
         <NavLink exact className={({isActive}) => (isActive ? activeLink : normalLink)} to="/" end><span className='hidden'>00</span> HOME</NavLink>
         <NavLink className={({isActive}) => (isActive ? activeLink : normalLink)} to="/destination"><span className='hidden'>01</span> DESTINATION</NavLink>
         <NavLink className={({isActive}) => (isActive ? activeLink : normalLink)} to="/crew"><span className='hidden'>02</span> CREW</NavLink>
