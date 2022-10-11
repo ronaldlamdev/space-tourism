@@ -22,16 +22,16 @@ const Crew = () => {
   return (
     <div className='crew-bg w-full h-screen'>
       <Navbar />
-      <h1 className='text-2xl font-["Barlow"] pt-8 text-white text-center md:text-left md:px-4'><span className='text-white/50 mr-2'>02</span>MEET YOUR CREW</h1>
-      <div className='flex flex-col md:flex-col-reverse justify-center items-center'>
+      <h1 className='text-2xl lg:text-3xl font-["Barlow"] pt-8 text-white text-center md:text-left md:px-4'><span className='text-white/50 mr-2'>02</span>MEET YOUR CREW</h1>
+      <div className='flex flex-col md:flex-col-reverse lg:flex-row-reverse lg:mt-20 justify-center items-center lg:mx-20'>
 
         {/* Image container */}
         <div className='border-b-2 border-gray-700 w-full mt-6'>
-          <img className='w-[280px] md:w-[21rem] h-[330px] md:h-auto mx-auto' src={image} alt={Data.crew[member].name}/>
+          <img className='w-[280px] md:w-[21rem] lg:w-[30rem] h-[330px] md:h-auto mx-auto' src={image} alt={Data.crew[member].name}/>
         </div>
 
         {/* Text container */}
-        <div className='flex flex-col md:flex-col-reverse text-center p-4'>
+        <div className='flex flex-col md:flex-col-reverse text-center lg:text-left p-4'>
 
           {/* Options */}
           <div className='flex justify-evenly mx-auto py-8 gap-4'>
@@ -42,9 +42,9 @@ const Crew = () => {
           </div>
 
           <div className='text-white mt-4'>
-            <h3 className='text-white/50 font-["Bellefair"] text-4xl'>{Data.crew[member].role}</h3>
-            <h2 className='font-["Bellefair"] text-[2.5rem]'>{Data.crew[member].name}</h2>
-            <p className='text-[#d2d8f9] mt-4 px-8 font-["Barlow_Condensed"] text-[1.5rem]'>{Data.crew[member].bio}</p>
+            <h3 className='text-white/50 font-["Bellefair"] text-4xl lg:text-6xl'>{Data.crew[member].role}</h3>
+            <h2 className='font-["Bellefair"] text-[2.5rem] lg:text-[4rem]'>{Data.crew[member].name}</h2>
+            <p className='text-[#d2d8f9] mt-4 px-8 lg:px-0 font-["Barlow_Condensed"] text-[1.5rem] lg:text-2xl'>{Data.crew[member].bio}</p>
           </div>
         </div>
 
