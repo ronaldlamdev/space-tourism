@@ -22,8 +22,8 @@ const Technology = () => {
   return (
     <div className='technology-bg w-full h-screen'>
       <Navbar />
-      <h1 className='text-2xl text-center md:text-left font-["Barlow"] pt-8 md:px-4 text-white'><span className='text-white/50 mr-2'>03</span>SPACE LAUNCH 101</h1>
-      <div className='flex flex-col'>
+      <h1 className='text-2xl lg:text-3xl text-center md:text-left font-["Barlow"] pt-8 md:px-4 text-white'><span className='text-white/50 mr-2'>03</span>SPACE LAUNCH 101</h1>
+      <div className='flex flex-col lg:flex-row-reverse lg:ml-20 lg:mt-32'>
 
         {/* Image Container */}
         <div className='py-8 w-full'>
@@ -31,19 +31,19 @@ const Technology = () => {
         </div>
 
         {/* Text Container */}
-        <div className='px-4'>
+        <div className='px-4 lg:flex lg:gap-8'>
           
           {/* Options */}
-          <div className='text-white font-["Bellefair"] flex justify-center gap-4 items-center'>
+          <div className='text-white font-["Bellefair"] flex justify-center gap-4 items-center lg:flex-col'>
             <button onClick={() => {setTech(0), imageHandler()}} className={'tech-option' + (tech === 0 ? ' tech-active' : '')}>1</button>
             <button onClick={() => {setTech(1), imageHandler(1)}} className={'tech-option' + (tech === 1 ? ' tech-active' : '')}>2</button>
             <button onClick={() => {setTech(2), imageHandler(2)}} className={'tech-option' + (tech === 2 ? ' tech-active' : '')}>3</button>
           </div>
 
-          <div className='text-white text-center flex flex-col items-center py-8'>
-            <h2 className='text-[#d2d8f9] text-2xl font-["Barlow"]'>THE TECHNOLOGY...</h2>
-            <h1 className='font-["Bellefair"] text-5xl'>{Data.technology[tech].name}</h1>
-            <p className='font-["Barlow_Condensed"] text-[#d2d8f9] text-2xl py-8'>{Data.technology[tech].description}</p>
+          <div className='text-white text-center lg:text-left lg:items-start flex flex-col items-center py-8'>
+            <h2 className='text-[#d2d8f9] text-2xl lg:text-3xl font-["Barlow"]'>THE TECHNOLOGY...</h2>
+            <h1 className='font-["Bellefair"] text-5xl lg:text-7xl'>{Data.technology[tech].name}</h1>
+            <p className='font-["Barlow_Condensed"] text-[#d2d8f9] text-2xl lg:text-3xl py-8'>{Data.technology[tech].description}</p>
           </div>
 
         </div>
