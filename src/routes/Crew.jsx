@@ -23,7 +23,7 @@ const Crew = () => {
     <div className='crew-bg w-full h-screen'>
       <Navbar />
       <h1 className='text-2xl lg:text-3xl font-["Barlow"] pt-8 text-white text-center md:text-left md:px-4'><span className='text-white/50 mr-2'>02</span>MEET YOUR CREW</h1>
-      <div className='flex flex-col md:flex-col-reverse lg:flex-row-reverse lg:mt-8 justify-center items-center lg:mx-20'>
+      <div className='flex flex-col md:flex-col-reverse lg:flex-row-reverse justify-center items-center lg:mx-20'>
 
         {/* Image container */}
         <div className='border-b-2 border-gray-700 w-full mt-6'>
