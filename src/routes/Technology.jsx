@@ -23,7 +23,7 @@ const Technology = () => {
     <div className='technology-bg w-full h-screen'>
       <Navbar />
       <h1 className='text-2xl lg:text-3xl text-center md:text-left font-["Barlow"] pt-8 md:px-4 text-white'><span className='text-white/50 mr-2'>03</span>SPACE LAUNCH 101</h1>
-      <div className='flex flex-col lg:flex-row-reverse lg:ml-20 lg:mt-32'>
+      <div className='flex flex-col lg:flex-row-reverse lg:ml-20 lg:mt-24'>
 
         {/* Image Container */}
         <div className='py-8 w-full lg:flex lg:justify-end lg:py-0'>

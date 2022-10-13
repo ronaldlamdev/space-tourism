@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className='home-bg w-full h-screen'>
       <Navbar />
-      <div className='grid grid-cols-1 text-center lg:grid-cols-2 lg:mx-20 lg:my-40'>
+      <div className='grid grid-cols-1 text-center lg:grid-cols-2 lg:mx-20 lg:my-20'>
 
         {/* 1st Grid Column */}
         <div className='py-24'>
