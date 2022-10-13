@@ -2,10 +2,6 @@ Live site : https://ronaldlamdev.github.io/space-tourism/
 
 Space site for Frontend Mentor created using React, React Router Dom V6, and Tailwind CSS.
 
-***For some reason, when I open the site locally the crew images do not cause the crew page to scroll past the max height 
-which is 100% of the viewport, but when I do open the site as a deployed project, the crew site is scrollable past max height.
-Please let me know how to fix this.***
-
 ###Things I've learned from creating this project
 
 -Improved React Router Dom skills
