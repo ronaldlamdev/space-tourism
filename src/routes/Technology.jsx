@@ -11,12 +11,12 @@ import Data from '../data/data.json';
 const Technology = () => {
 
   const [tech, setTech] = useState(0);
-  const [image, setImage] = useState(LandScapeVehicle);
+  const [image, setImage] = useState([LandScapeVehicle, PortraitVehicle]);
 
   const imageHandler = (tech) => {
-    (tech === 1) ? setImage(LandScapeCapsule) :
-    (tech === 2) ? setImage(LandScapeSpacePort) : 
-    setImage(LandScapeVehicle)
+    (tech === 1) ? setImage([LandScapeCapsule, PortraitCapsule]) :
+    (tech === 2) ? setImage([LandScapeSpacePort, PortraitSpacePort]) : 
+    setImage([LandScapeVehicle, PortraitVehicle])
   }
 
   return (
@@ -26,12 +26,17 @@ const Technology = () => {
       <div className='flex flex-col lg:flex-row-reverse lg:ml-20 lg:mt-32'>
 
         {/* Image Container */}
-        <div className='py-8 w-full'>
-          <img src={image} className="w-full" alt={Data.technology[tech].name}/>
+        <div className='py-8 w-full lg:flex lg:justify-end lg:py-0'>
+          {/* <img src={image} className="w-full" alt={Data.technology[tech].name}/> */}
+          <picture>
+            <source srcSet={image[1]} media="(min-width: 1024px)">
+            </source>
+            <img className='md:w-full lg:h-full' src={image[0]} alt={Data.technology[tech].name}/>
+          </picture>
         </div>
 
         {/* Text Container */}
-        <div className='px-4 lg:flex lg:gap-8'>
+        <div className='px-4 lg:flex lg:gap-8 lg:items-center'>
           
           {/* Options */}
           <div className='text-white font-["Bellefair"] flex justify-center gap-4 items-center lg:flex-col'>
@@ -41,9 +46,9 @@ const Technology = () => {
           </div>
 
           <div className='text-white text-center lg:text-left lg:items-start flex flex-col items-center py-8'>
-            <h2 className='text-[#d2d8f9] text-2xl lg:text-3xl font-["Barlow"]'>THE TECHNOLOGY...</h2>
-            <h1 className='font-["Bellefair"] text-5xl lg:text-7xl'>{Data.technology[tech].name}</h1>
-            <p className='font-["Barlow_Condensed"] text-[#d2d8f9] text-2xl lg:text-3xl py-8'>{Data.technology[tech].description}</p>
+            <h2 className='text-[#d2d8f9] text-2xl lg:text-2xl font-["Barlow"]'>THE TECHNOLOGY...</h2>
+            <h1 className='font-["Bellefair"] text-5xl lg:text-6xl'>{Data.technology[tech].name}</h1>
+            <p className='font-["Barlow_Condensed"] text-[#d2d8f9] text-2xl py-8'>{Data.technology[tech].description}</p>
           </div>
 
         </div>
