@@ -25,8 +25,8 @@ const Crew = () => {
       <div className='flex flex-col md:flex-col-reverse lg:flex-row-reverse justify-center items-center lg:mx-20'>
 
         {/* Image container */}
-        <div className='border-b-2 border-gray-700 w-full mt-6'>
-          <img className='w-[280px] md:w-[21rem] lg:w-[30rem] h-[330px] md:h-auto mx-auto' src={image} alt={Data.crew[member].name}/>
+        <div className='border-b-2 border-gray-700 w-full mt-6 lg:mt-0'>
+          <img className='w-[280px] md:w-[21rem] lg:w-[30rem] h-[330px] md:h-auto lg:h-[500px] mx-auto' src={image} alt={Data.crew[member].name}/>
         </div>
 
         {/* Text container */}
