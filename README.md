@@ -9,9 +9,12 @@ Space site for Frontend Mentor created using React, React Router Dom V6, and Tai
 -How to fetch data from a JSON file and map out data 
 -Created multiple conditioned ternary operators
 -Added conditioning in styling for links when clicked
+-Passing multiple functions in callback functions
+-Passing arrays as arguements
 
 ###Things I want to improve
 
 -Simpler Tailwind code like shortening down utility classes into a single class for better readability
 -Improve design skills and planning/problem solving skills
 -Learn a UI component frameworks such as Chakra UI or Material UI
+-Learn advanced React concepts like useContext hooks
