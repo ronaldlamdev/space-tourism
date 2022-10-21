@@ -11,6 +11,7 @@ Space site for Frontend Mentor created using React, React Router Dom V6, and Tai
 -Added conditioning in styling for links when clicked
 -Passing multiple functions in callback functions
 -Passing arrays as arguements
+-Used NavLink instead of Link from React Router Dom to indicate an active link
 
 ###Things I want to improve
 
